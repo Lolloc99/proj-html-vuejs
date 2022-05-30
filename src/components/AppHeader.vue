@@ -5,19 +5,12 @@
         <i class="fas fa-clock"></i>
         <span>Open Hours: Mon - Sat - 9:00 - 18:00</span>
       </div>
-      <div class="col-dx">
-        <div>
-          <i class="fas fa-phone"></i>
-          <span>+1 (305) 1234-5678</span>
-        </div>
-        <div>
-          <i class="fas fa-envelope"></i>
-          <span>hello@example.com</span>
-        </div>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-linkedin-in"></i>
-      </div>
+      <ul class="col-dx">
+        <li v-for="(item, index) in contacts" :key="index">
+          <i :class="item.icon"></i>
+          <span>{{ item.text }}</span>
+        </li>
+      </ul>
     </section>
   </header>
 </template>
@@ -25,6 +18,33 @@
 <script>
 export default {
   name: "AppHeader",
+
+  data: function () {
+    return {
+      contacts: [
+        {
+          icon: "fas fa-phone",
+          text: "+1 (305) 1234-5678",
+        },
+        {
+          icon: "fas fa-envelope",
+          text: "hello@example.com",
+        },
+        {
+          icon: "fab fa-facebook-f",
+          text: "",
+        },
+        {
+          icon: "fab fa-twitter",
+          text: "",
+        },
+        {
+          icon: "fab fa-linkedin-in",
+          text: "",
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -64,20 +84,14 @@ span {
   display: flex;
   align-items: center;
 
-  i {
-    color: #c4c3c3;
-    margin: 0 1rem;
-    font-size: 0.9rem;
-    cursor: pointer;
-  }
-
-  div {
-    margin: 0 0.8rem;
-    cursor: pointer;
-  }
-
-  div i {
+  li {
     margin: 0 0.5rem;
+    cursor: pointer;
+  }
+  
+  i {
+    margin: 0 0.5rem;
+    color: #c4c3c3;
   }
 }
 </style>
