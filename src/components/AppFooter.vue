@@ -4,10 +4,8 @@
 
 <script>
 export default {
-    name: 'AppFooter',
-}
+  name: "AppFooter",
+};
 </script>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>
