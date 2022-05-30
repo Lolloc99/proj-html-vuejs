@@ -1,6 +1,7 @@
 <template>
   <main class="bg-container banner">
     <section class="container">
+      <!-- Navbar -->
       <nav>
         <div col-sx>
           <h2 class="nexgen">GEN</h2>
@@ -12,9 +13,25 @@
               <h3>{{ item.text }}</h3>
             </li>
           </ul>
-          <button>GET IN TOUCH</button>
+          <button class="btn-get-in">GET IN TOUCH</button>
         </div>
       </nav>
+      <!-- /Navbar -->
+
+      <!-- Banner content -->
+      <div class="lead-c">
+        <h1>Lead ~</h1>
+        <p>
+          Successful strategies require data analysis , creativity and customer
+          focus , taking <br />
+          advantage of the latest technologies to offer excellent services .
+        </p>
+        <div class="btns">
+            <button class="btn-get-in">GET IN TOUCH</button>
+            <button class="btn-read-more">READ MORE</button>
+        </div>
+      </div>
+      <!-- /Banner content -->
     </section>
   </main>
 </template>
@@ -92,31 +109,42 @@ nav {
     cursor: pointer;
 
     &:hover {
-        color: $btn-get-in-touch;
+      color: $btn-get-in-touch;
     }
   }
 
   ul {
-      display: inline-block;
-  }
-
-  button {
     display: inline-block;
-    border: transparent;
-    padding: 0.8rem 1.6rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    color: white;
-    background-color: $btn-get-in-touch;
-    margin-left: .3rem;
-    cursor: pointer;
+  }
+}
 
-    &:active {
-      color: $btn-get-in-touch;
-      background-color: white;
-      border: 1px solid $btn-get-in-touch;
-    }
+.btn-get-in,
+.btn-read-more {
+  display: inline-block;
+  border: 1px solid transparent;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  color: white;
+  background-color: $btn-get-in-touch;
+  margin-left: 0.3rem;
+  cursor: pointer;
+
+  &:active {
+    color: $btn-get-in-touch;
+    background-color: white;
+    border: 1px solid $btn-get-in-touch;
+  }
+}
+
+.btn-read-more {
+  border: 1px solid $btn-get-in-touch;
+  background-color: transparent;
+  margin: 0 0.3rem 0 1.5rem;
+
+  &:active {
+    border: 1px solid white;
   }
 }
 
@@ -127,5 +155,37 @@ nav {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   background-color: $nexgen-logo-bg;
+}
+
+.lead-c {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+
+  h1 {
+    font-size: 5rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    color: white;
+
+    &::after {
+      content: "Customer";
+      padding: 0 1rem;
+      background-color: rgba(0, 128, 53, 0.1);
+    }
+  }
+
+  p {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color: rgb(179, 175, 175);
+  }
+}
+
+.btns {
+    margin-top: 2.5rem;
 }
 </style>
