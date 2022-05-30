@@ -1,10 +1,17 @@
 <template>
-  <main></main>
+  <main>
+    <MainBanner />
+  </main>
 </template>
 
 <script>
+import MainBanner from "./MainBanner.vue";
+
 export default {
   name: "AppMain",
+  components: {
+    MainBanner,
+  },
 };
 </script>
 
