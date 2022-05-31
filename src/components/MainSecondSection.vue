@@ -60,20 +60,7 @@ img {
   height: 100%;
 }
 
-small {
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: $text-lighter;
-  text-transform: uppercase;
-}
-
 h1 {
-  font-size: 3.3rem;
-  margin: 1.7rem 0;
-  color: $text-dark;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 900;
-
   &::before {
     content: "The";
     color: $text-light;
@@ -107,9 +94,9 @@ ul {
   }
 
   li {
-      display: inline-block;
-      max-width: calc(100% / 2);
-      min-height: 150px;
+    display: inline-block;
+    max-width: calc(100% / 2);
+    min-height: 150px;
   }
 }
 </style>

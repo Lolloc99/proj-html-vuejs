@@ -60,7 +60,7 @@ i {
   font-size: 1.8rem;
   padding: 1rem;
   border-radius: 50%;
-  color: $btn-get-in-touch;
+  color: $text-light;
   background-color: $bg-light-blue;
 }
 </style>

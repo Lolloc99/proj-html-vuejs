@@ -3,6 +3,7 @@
     <MainBanner :links="bannerLinks"/>
     <MainFirstSection :cards="firstSectionCards"/>
     <MainSecondSection :cards="secondSectionCards"/>
+    <MainThirdSection :cards="thirdSectionCards"/>
   </main>
 </template>
 
@@ -10,6 +11,7 @@
 import MainBanner from "./MainBanner.vue";
 import MainFirstSection from './MainFirstSection.vue';
 import MainSecondSection from './MainSecondSection.vue';
+import MainThirdSection from './MainThirdSection.vue';
 
 export default {
   name: "AppMain",
@@ -17,6 +19,7 @@ export default {
     MainBanner,
     MainFirstSection,
     MainSecondSection,
+    MainThirdSection,
   },
 
   data: function () {
@@ -75,6 +78,38 @@ export default {
           icon: "fas fa-graduation-cap",
           title: "Expertise",
           subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit." ,
+        },
+      ],
+      thirdSectionCards: [
+        {
+          icon: "fas fa-sitemap",
+          title: "Audit & Assurance",
+          subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        },
+        {
+          icon: "fas fa-briefcase",
+          title: "Financial Advisory",
+          subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        },
+        {
+          icon: "fas fa-chart-line",
+          title: "Analytics and M&A",
+          subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        },
+        {
+          icon: "fas fa-plane",
+          title: "Middle Marketing",
+          subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        },
+        {
+          icon: "fas fa-globe",
+          title: "Legal Consulting",
+          subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        },
+        {
+          icon: "fas fa-inbox",
+          title: "Regulatory Risk",
+          subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         },
       ],
     };

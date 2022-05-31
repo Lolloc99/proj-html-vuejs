@@ -91,7 +91,7 @@ nav {
     cursor: pointer;
 
     &:hover {
-      color: $btn-get-in-touch;
+      color: $text-light;
     }
   }
 
@@ -109,19 +109,19 @@ nav {
   font-weight: bold;
   border-radius: 5px;
   color: white;
-  background-color: $btn-get-in-touch;
+  background-color: $text-light;
   margin-left: 0.3rem;
   cursor: pointer;
 
   &:active {
-    color: $btn-get-in-touch;
+    color: $text-light;
     background-color: white;
-    border: 1px solid $btn-get-in-touch;
+    border: 1px solid $text-light;
   }
 }
 
 .btn-read-more {
-  border: 1px solid $btn-get-in-touch;
+  border: 1px solid $text-light;
   background-color: transparent;
   margin: 0 0.3rem 0 1.5rem;
 
@@ -148,8 +148,6 @@ nav {
 
   h1 {
     font-size: 5rem;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 900;
     color: white;
 
     &::after {
