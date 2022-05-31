@@ -39,27 +39,9 @@
 <script>
 export default {
   name: "MainBanner",
-  data: function () {
-    return {
-      links: [
-        {
-          text: "HOME",
-        },
-        {
-          text: "ABOUT",
-        },
-        {
-          text: "SERVICES",
-        },
-        {
-          text: "PRICING",
-        },
-        {
-          text: "BLOG",
-        },
-      ],
-    };
-  },
+  props: {
+    links: Array,
+  }
 };
 </script>
 

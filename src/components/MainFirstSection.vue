@@ -13,27 +13,9 @@
 <script>
 export default {
   name: "MainFirstSection",
-  data: function () {
-    return {
-      cards: [
-        {
-          icon: "far fa-user",
-          title: "Human Capital",
-          subtitle: "Humanizing business: Harness the power of technology to improve way people work."
-        },
-        {
-          icon: "fas fa-chart-pie",
-          title: "Core Business",
-          subtitle: "It takes innovative approaches to transform, modernize, and run existing platforms."
-        },
-        {
-          icon: "fas fa-tachometer-alt",
-          title: "Performance",
-          subtitle: "Achieving maximum impact and value from investments in finance and supply chain."
-        },
-      ]
-    };
-  },
+  props: {
+    cards: Array,
+  }
 };
 </script>
 
