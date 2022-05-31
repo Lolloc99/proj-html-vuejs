@@ -18,33 +18,9 @@
 <script>
 export default {
   name: "AppHeader",
-
-  data: function () {
-    return {
-      contacts: [
-        {
-          icon: "fas fa-phone",
-          text: "+1 (305) 1234-5678",
-        },
-        {
-          icon: "fas fa-envelope",
-          text: "hello@example.com",
-        },
-        {
-          icon: "fab fa-facebook-f",
-          text: "",
-        },
-        {
-          icon: "fab fa-twitter",
-          text: "",
-        },
-        {
-          icon: "fab fa-linkedin-in",
-          text: "",
-        },
-      ],
-    };
-  },
+  props: {
+    contacts: Array,
+  }
 };
 </script>
 

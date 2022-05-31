@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <AppHeader />
+    <AppHeader :contacts="headerContacts"/>
     <AppMain />
     <AppFooter />
   </div>
@@ -17,6 +17,33 @@ export default {
     AppHeader,
     AppMain,
     AppFooter,
+  },
+
+  data: function () {
+    return {
+      headerContacts: [
+        {
+          icon: "fas fa-phone",
+          text: "+1 (305) 1234-5678",
+        },
+        {
+          icon: "fas fa-envelope",
+          text: "hello@example.com",
+        },
+        {
+          icon: "fab fa-facebook-f",
+          text: "",
+        },
+        {
+          icon: "fab fa-twitter",
+          text: "",
+        },
+        {
+          icon: "fab fa-linkedin-in",
+          text: "",
+        },
+      ],
+    };
   },
 };
 </script>
