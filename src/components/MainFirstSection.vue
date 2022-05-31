@@ -1,12 +1,12 @@
 <template>
   <section class="section">
-    <div class="container row">
-      <div v-for="(card, index) in cards" :key="index" class="col">
+    <ul class="container row">
+      <li v-for="(card, index) in cards" :key="index" class="col">
         <i :class="card.icon"></i>
         <h2>{{ card.title }}</h2>
         <p>{{ card.subtitle }}</p>
-      </div>
-    </div>
+      </li>
+    </ul>
   </section>
 </template>
 
@@ -29,7 +29,7 @@ export default {
   align-items: center;
   width: 100%;
   padding: 10rem 0;
-  background-color: $bg-ligth-green;
+  background-color: $bg-light-green;
 }
 
 .row {
@@ -61,6 +61,6 @@ i {
   padding: 1rem;
   border-radius: 50%;
   color: $btn-get-in-touch;
-  background-color: $bg-ligth-blue;
+  background-color: $bg-light-blue;
 }
 </style>

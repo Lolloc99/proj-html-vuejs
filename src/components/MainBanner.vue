@@ -132,7 +132,7 @@ nav {
 
 .nexgen::before {
   content: "NEX";
-  color: $bg-most-popular;
+  color: $text-lighter;
   padding: 0.7rem 0.1rem 0.7rem 2rem;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;

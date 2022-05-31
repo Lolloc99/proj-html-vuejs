@@ -2,18 +2,21 @@
   <main>
     <MainBanner :links="bannerLinks"/>
     <MainFirstSection :cards="firstSectionCards"/>
+    <MainSecondSection :cards="secondSectionCards"/>
   </main>
 </template>
 
 <script>
 import MainBanner from "./MainBanner.vue";
 import MainFirstSection from './MainFirstSection.vue';
+import MainSecondSection from './MainSecondSection.vue';
 
 export default {
   name: "AppMain",
   components: {
     MainBanner,
     MainFirstSection,
+    MainSecondSection,
   },
 
   data: function () {
@@ -50,6 +53,28 @@ export default {
           icon: "fas fa-tachometer-alt",
           title: "Performance",
           subtitle: "Achieving maximum impact and value from investments in finance and supply chain."
+        },
+      ],
+      secondSectionCards: [
+        {
+          icon: "fas fa-award",
+          title: "Tradition",
+          subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+        {
+          icon: "fas fa-lock",
+          title: "Security",
+          subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+        {
+          icon: "fas fa-edit",
+          title: "Certificate",
+          subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+        {
+          icon: "fas fa-graduation-cap",
+          title: "Expertise",
+          subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit." ,
         },
       ],
     };
