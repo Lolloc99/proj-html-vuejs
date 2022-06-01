@@ -29,23 +29,23 @@
           <ul class="info-list">
             <li>
               <span>Standard Accounting</span>
-              <i :class="item - option1"></i>
+              <i :class="item.option1"></i>
             </li>
             <li class="li">
               <span>Platform Access</span>
-              <i :class="item - option2"></i>
+              <i :class="item.option2"></i>
             </li>
             <li class="li">
               <span>Business Orientation</span>
-              <i :class="item - option3"></i>
+              <i :class="item.option3"></i>
             </li>
             <li class="li">
               <span>Dedicated Consultant</span>
-              <i :class="item - option4"></i>
+              <i :class="item.option4"></i>
             </li>
             <li class="li">
               <span>Personal Assistance</span>
-              <i :class="item - option5"></i>
+              <i :class="item.option5"></i>
             </li>
           </ul>
         </li>
