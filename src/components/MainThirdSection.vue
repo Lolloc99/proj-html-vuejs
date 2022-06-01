@@ -2,7 +2,7 @@
   <section class="section">
     <div class="container">
       <small>Our business areas</small>
-      <h1>Excellence in</h1>
+      <h1>Excellence in </h1>
       <div class="space-bet">
         <p>
           We are leaders in providing consultancy services with a set of
@@ -47,6 +47,7 @@ export default {
 
 h1 {
   color: white;
+  margin: 1.7rem 0;
 
   &::after {
     content: "Services";
@@ -110,6 +111,15 @@ ul {
     padding: 3rem;
     border-radius: 10px;
     background-color: $card-dark;
+    transition: .5s;
+
+    &:hover {
+      transform: translate(0px, -12px);
+    }
+
+    &:hover button {
+      background-color: $text-light;
+    }
   }
 }
 </style>

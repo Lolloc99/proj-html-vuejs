@@ -4,6 +4,7 @@
     <MainFirstSection :cards="firstSectionCards"/>
     <MainSecondSection :cards="secondSectionCards"/>
     <MainThirdSection :cards="thirdSectionCards"/>
+    <MainFourthSection :cards="fourthSectionCards"/>
   </main>
 </template>
 
@@ -12,6 +13,7 @@ import MainBanner from "./MainBanner.vue";
 import MainFirstSection from './MainFirstSection.vue';
 import MainSecondSection from './MainSecondSection.vue';
 import MainThirdSection from './MainThirdSection.vue';
+import MainFourthSection from './MainFourthSection.vue';
 
 export default {
   name: "AppMain",
@@ -20,6 +22,7 @@ export default {
     MainFirstSection,
     MainSecondSection,
     MainThirdSection,
+    MainFourthSection,
   },
 
   data: function () {
@@ -110,6 +113,38 @@ export default {
           icon: "fas fa-inbox",
           title: "Regulatory Risk",
           subtitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        },
+      ],
+      fourthSectionCards: [
+        {
+          icon: "fas fa-rocket",
+          title: "Standard",
+          price: 490,
+          option1: "fas fa-check",
+          option2: "fas fa-check",
+          option3: "fas fa-times",
+          option4: "fas fa-times",
+          option5: "fas fa-times"
+        },
+        {
+          icon: "fas fa-briefcase",
+          title: "Professional",
+          price: 890,
+          option1: "fas fa-check",
+          option2: "fas fa-check",
+          option3: "fas fa-check",
+          option4: "fas fa-times",
+          option5: "fas fa-times"
+        },
+        {
+          icon: "far fa-gem",
+          title: "Ultimate",
+          price: 1390,
+          option1: "fas fa-check",
+          option2: "fas fa-check",
+          option3: "fas fa-check",
+          option4: "fas fa-check",
+          option5: "fas fa-check"
         },
       ],
     };

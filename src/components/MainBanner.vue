@@ -27,8 +27,8 @@
           advantage of the latest technologies to offer excellent services .
         </p>
         <div class="btns">
-            <button class="btn-get-in">GET IN TOUCH</button>
-            <button class="btn-read-more">READ MORE</button>
+          <button class="btn-get-in">GET IN TOUCH</button>
+          <button class="btn-read-more">READ MORE</button>
         </div>
       </div>
       <!-- /Banner content -->
@@ -41,7 +41,7 @@ export default {
   name: "MainBanner",
   props: {
     links: Array,
-  }
+  },
 };
 </script>
 
@@ -166,6 +166,6 @@ nav {
 }
 
 .btns {
-    margin-top: 2.5rem;
+  margin-top: 2.5rem;
 }
 </style>

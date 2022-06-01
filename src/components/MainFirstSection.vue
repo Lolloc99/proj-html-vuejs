@@ -15,7 +15,7 @@ export default {
   name: "MainFirstSection",
   props: {
     cards: Array,
-  }
+  },
 };
 </script>
 
@@ -43,6 +43,11 @@ export default {
   min-height: 270px;
   padding: 3rem;
   background-color: white;
+  transition: .5s;
+
+  &:hover {
+    transform: translate(0px, -12px);
+  }
 }
 
 h2 {

@@ -61,6 +61,8 @@ img {
 }
 
 h1 {
+  margin: 1.7rem 0;
+
   &::before {
     content: "The";
     color: $text-light;
@@ -73,6 +75,7 @@ h1 {
 p {
   color: rgba(33, 62, 55, 0.7);
   font-size: 1.15rem;
+  font-family: $big
 }
 
 ul {
