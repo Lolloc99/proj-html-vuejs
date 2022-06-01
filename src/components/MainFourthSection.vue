@@ -4,7 +4,7 @@
       <div class="intro">
         <small>Monthly plans</small>
         <h1> Table</h1>
-        <p>
+        <p class="submain">
           We can help you deliver and execute your future, whetever you compete,
           using the latest <br />
           technologies, from strategy development to implementation.
@@ -92,17 +92,13 @@ export default {
       border-radius: 5px;
     }
   }
-
-  p {
-    color: rgba(33, 62, 55, 0.7);
-    font-size: 1.15rem;
-  }
 }
 
 .main-ul {
   display: flex;
   justify-content: space-between;
-  margin-top: 4rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
 }
 
 .main-li {
@@ -110,6 +106,7 @@ export default {
   width: calc(100% / 3 - 1.5rem);
   min-height: 500px;
   padding: 2rem;
+  margin: 1rem 0;
   transition: 0.5s;
 
   &:hover {

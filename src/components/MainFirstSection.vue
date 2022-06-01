@@ -28,7 +28,7 @@ export default {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 10rem 0;
+  padding: 8rem 0;
   background-color: $bg-light-green;
 }
 
@@ -36,6 +36,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .col {
@@ -43,6 +44,7 @@ export default {
   min-height: 270px;
   padding: 3rem;
   background-color: white;
+  margin: 1rem 0;
   transition: .5s;
 
   &:hover {

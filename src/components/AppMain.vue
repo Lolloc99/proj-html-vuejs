@@ -5,6 +5,7 @@
     <MainSecondSection :cards="secondSectionCards"/>
     <MainThirdSection :cards="thirdSectionCards"/>
     <MainFourthSection :cards="fourthSectionCards"/>
+    <MainFifthSection :cards="fifthSectionCards"/>
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import MainFirstSection from './MainFirstSection.vue';
 import MainSecondSection from './MainSecondSection.vue';
 import MainThirdSection from './MainThirdSection.vue';
 import MainFourthSection from './MainFourthSection.vue';
+import MainFifthSection from './MainFifthSection.vue';
 
 export default {
   name: "AppMain",
@@ -23,6 +25,7 @@ export default {
     MainSecondSection,
     MainThirdSection,
     MainFourthSection,
+    MainFifthSection,
   },
 
   data: function () {
@@ -145,6 +148,20 @@ export default {
           option3: "fas fa-check",
           option4: "fas fa-check",
           option5: "fas fa-check"
+        },
+      ],
+      fifthSectionCards: [
+        {
+          img: "news-1.jpg",
+          text: "Increasing creativity is possible for everyone",
+        },
+        {
+          img: "news-2.jpg",
+          text: "Because market research is part of the business plan",
+        },
+        {
+          img: "news-3.jpg",
+          text: "Working from home is now a trend",
         },
       ],
     };
