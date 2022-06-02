@@ -171,7 +171,7 @@ export default {
 
     &:last-child i {
     padding: .7rem .9rem;
-  }
+    }
   }
 }
 

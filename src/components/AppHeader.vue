@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header id="header">
     <section class="container">
       <div class="col-sx">
         <i class="fas fa-clock"></i>
@@ -27,7 +27,7 @@ export default {
 <style scoped lang="scss">
 @import "../style/variables.scss";
 @import "~@fortawesome/fontawesome-free/css/all.min.css"; //Font Awesome
-.header {
+#header {
   display: flex;
   justify-content: center;
   align-items: center;

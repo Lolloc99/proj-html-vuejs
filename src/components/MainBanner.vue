@@ -133,9 +133,10 @@ nav {
 .nexgen::before {
   content: "NEX";
   color: $text-lighter;
-  padding: 0.7rem 0.1rem 0.7rem 2rem;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  padding: 0.7rem 0 0.7rem 2rem;
+  margin-right: 3px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
   background-color: $nexgen-logo-bg;
 }
 

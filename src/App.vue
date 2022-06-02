@@ -2,7 +2,7 @@
   <div id="app">
     <AppHeader :contacts="headerContacts"/>
     <AppMain />
-    <AppFooter />
+    <AppFooter :info="footerInfo"/>
   </div>
 </template>
 
@@ -43,6 +43,35 @@ export default {
           text: "",
         },
       ],
+      footerInfo: [
+        {
+          title: "About",
+          option1: "The company",
+          option2: "Institutional",
+          option3: "Social & Events",
+          option4: "Innovation",
+          option5: "Enviroment",
+          option6: "Technology",
+        },
+        {
+          title: "Services",
+          option1: "Audit & Assurance",
+          option2: "Financial Advisory",
+          option3: "Analytics M&A",
+          option4: "Middle Marketing",
+          option5: "Legal Consulting",
+          option6: "Regulatory Risk",
+        },
+        {
+          title: "Support",
+          option1: "Responsibility",
+          option2: "Terms of Use",
+          option3: "About Cookies",
+          option4: "Privacy Policy",
+          option5: "Accessibility",
+          option6: "Information",
+        },
+      ]
     };
   },
 };
