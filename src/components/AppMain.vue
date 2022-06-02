@@ -7,6 +7,7 @@
     <MainFourthSection :cards="fourthSectionCards"/>
     <MainFifthSection :cards="fifthSectionCards"/>
     <MainSixthSection />
+    <MainSeventhSection />
   </main>
 </template>
 
@@ -18,6 +19,7 @@ import MainThirdSection from './MainThirdSection.vue';
 import MainFourthSection from './MainFourthSection.vue';
 import MainFifthSection from './MainFifthSection.vue';
 import MainSixthSection from './MainSixthSection.vue';
+import MainSeventhSection from './MainSeventhSection.vue';
 
 export default {
   name: "AppMain",
@@ -29,6 +31,7 @@ export default {
     MainFourthSection,
     MainFifthSection,
     MainSixthSection,
+    MainSeventhSection,
   },
 
   data: function () {
