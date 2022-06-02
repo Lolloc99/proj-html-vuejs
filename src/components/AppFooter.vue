@@ -1,9 +1,12 @@
 <template>
-  <footer class="section">
+  <footer class="section-alt">
     <div class="top-footer container">
       <div class="col intro">
         <h2 class="nexgen">GEN</h2>
-        <p class="submain">A Functional HTML Template <br> for corporate & business</p>
+        <p class="submain">
+          A Functional HTML Template <br />
+          for corporate & business
+        </p>
         <ul>
           <li>
             <i class="fas fa-phone"></i>
@@ -18,7 +21,7 @@
             <p>Main Evenue, 987</p>
           </li>
         </ul>
-        <button class="btn-get-in">GET IN TOUCH</button>
+        <button class="btn-generic-empty">Get in touch</button>
       </div>
       <ul class="ul">
         <li class="col card" v-for="(item, index) in info" :key="index">
@@ -54,8 +57,12 @@
     </div>
     <div class="bottom-footer">
       <div class="container">
-        <p class="sx">Enjoy the low price, We are tracking any intention pf piracy</p>
-        <p class="dx">&copy; 2020 NEXGEN is Proudly Powered by <span>Codings</span>.</p>
+        <p class="sx">
+          Enjoy the low price, We are tracking any intention pf piracy
+        </p>
+        <p class="dx">
+          &copy; 2020 NEXGEN is Proudly Powered by <span>Codings</span>.
+        </p>
         <a href="header"><i class="fas fa-arrow-alt-circle-up"></i></a>
       </div>
     </div>
@@ -67,7 +74,7 @@ export default {
   name: "AppFooter",
   props: {
     info: Array,
-  }
+  },
 };
 </script>
 
@@ -75,12 +82,7 @@ export default {
 @import "../style/variables.scss";
 @import "~@fortawesome/fontawesome-free/css/all.min.css"; //Font Awesome
 
-.section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 76vh;
+.section-alt {
   background-color: $bg-dark-blue;
 }
 
@@ -105,20 +107,20 @@ export default {
     color: $text-footer;
 
     &::before {
-    content: "NEX";
-    color: $text-lighter;
-    padding: 0.7rem 0 0.7rem 2rem;
-    margin-right: 3px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    background-color: $nexgen-logo-bg;
+      content: "NEX";
+      color: $text-lighter;
+      padding: 0.7rem 0 0.7rem 2rem;
+      margin-right: 3px;
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+      background-color: $nexgen-logo-bg;
     }
   }
 
   .submain {
     margin: 3rem 0;
     color: $text-footer;
-    letter-spacing: .6px;
+    letter-spacing: 0.6px;
   }
 
   .intro {
@@ -139,28 +141,22 @@ export default {
       }
     }
 
-    .btn-get-in {
-      padding: 0.8rem 1.6rem;
+    .btn-generic-empty {
       margin-top: 1rem;
-      font-size: 1rem;
       font-weight: bold;
-      border: 1px solid $text-light;
-      border-radius: 5px;
-      color: white;
-      background-color: transparent;
-      cursor: pointer;
 
       &:active {
         color: white;
+        border: 1px solid $text-light;
         background-color: $text-light;
       }
     }
   }
 
-.ul {
-  display: flex;
-  justify-content: space-between;
-}
+  .ul {
+    display: flex;
+    justify-content: space-between;
+  }
 
   .card {
     width: 100%;
@@ -180,8 +176,8 @@ export default {
     li {
       display: flex;
       justify-content: flex-start;
-      margin: .8rem 0;
-      letter-spacing: .6px;
+      margin: 0.8rem 0;
+      letter-spacing: 0.6px;
 
       i {
         margin-right: 1rem;
@@ -209,8 +205,8 @@ export default {
 
     span {
       color: $text-light;
-      margin-left: .3rem;
-      letter-spacing: .5px;
+      margin-left: 0.3rem;
+      letter-spacing: 0.5px;
       font-size: 1.2rem;
     }
 
@@ -226,6 +222,5 @@ export default {
       bottom: 25px;
     }
   }
-
 }
 </style>

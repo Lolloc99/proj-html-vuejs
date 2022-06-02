@@ -1,11 +1,11 @@
 <template>
   <main>
-    <MainBanner :links="bannerLinks"/>
-    <MainFirstSection :cards="firstSectionCards"/>
-    <MainSecondSection :cards="secondSectionCards"/>
-    <MainThirdSection :cards="thirdSectionCards"/>
-    <MainFourthSection :cards="fourthSectionCards"/>
-    <MainFifthSection :cards="fifthSectionCards"/>
+    <MainBanner :links="bannerLinks" />
+    <MainFirstSection :cards="firstSectionCards" />
+    <MainSecondSection :cards="secondSectionCards" />
+    <MainThirdSection :cards="thirdSectionCards" />
+    <MainFourthSection :cards="fourthSectionCards" />
+    <MainFifthSection :cards="fifthSectionCards" />
     <MainSixthSection />
     <MainSeventhSection />
   </main>
@@ -13,13 +13,13 @@
 
 <script>
 import MainBanner from "./MainBanner.vue";
-import MainFirstSection from './MainFirstSection.vue';
-import MainSecondSection from './MainSecondSection.vue';
-import MainThirdSection from './MainThirdSection.vue';
-import MainFourthSection from './MainFourthSection.vue';
-import MainFifthSection from './MainFifthSection.vue';
-import MainSixthSection from './MainSixthSection.vue';
-import MainSeventhSection from './MainSeventhSection.vue';
+import MainFirstSection from "./MainFirstSection.vue";
+import MainSecondSection from "./MainSecondSection.vue";
+import MainThirdSection from "./MainThirdSection.vue";
+import MainFourthSection from "./MainFourthSection.vue";
+import MainFifthSection from "./MainFifthSection.vue";
+import MainSixthSection from "./MainSixthSection.vue";
+import MainSeventhSection from "./MainSeventhSection.vue";
 
 export default {
   name: "AppMain",
@@ -57,17 +57,20 @@ export default {
         {
           icon: "far fa-user",
           title: "Human Capital",
-          subtitle: "Humanizing business: Harness the power of technology to improve way people work."
+          subtitle:
+            "Humanizing business: Harness the power of technology to improve way people work.",
         },
         {
           icon: "fas fa-chart-pie",
           title: "Core Business",
-          subtitle: "It takes innovative approaches to transform, modernize, and run existing platforms."
+          subtitle:
+            "It takes innovative approaches to transform, modernize, and run existing platforms.",
         },
         {
           icon: "fas fa-tachometer-alt",
           title: "Performance",
-          subtitle: "Achieving maximum impact and value from investments in finance and supply chain."
+          subtitle:
+            "Achieving maximum impact and value from investments in finance and supply chain.",
         },
       ],
       secondSectionCards: [
@@ -89,7 +92,7 @@ export default {
         {
           icon: "fas fa-graduation-cap",
           title: "Expertise",
-          subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit." ,
+          subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
       ],
       thirdSectionCards: [
@@ -133,7 +136,7 @@ export default {
           option2: "fas fa-check",
           option3: "fas fa-times",
           option4: "fas fa-times",
-          option5: "fas fa-times"
+          option5: "fas fa-times",
         },
         {
           icon: "fas fa-briefcase",
@@ -143,7 +146,7 @@ export default {
           option2: "fas fa-check",
           option3: "fas fa-check",
           option4: "fas fa-times",
-          option5: "fas fa-times"
+          option5: "fas fa-times",
         },
         {
           icon: "far fa-gem",
@@ -153,21 +156,30 @@ export default {
           option2: "fas fa-check",
           option3: "fas fa-check",
           option4: "fas fa-check",
-          option5: "fas fa-check"
+          option5: "fas fa-check",
         },
       ],
       fifthSectionCards: [
         {
           img: "news-1.jpg",
-          text: "Increasing creativity is possible for everyone",
+          title: "Increasing creativity is possible for everyone",
+          text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+          time: "3 Days Ago",
+          user: "Andrea Miller",
         },
         {
           img: "news-2.jpg",
-          text: "Because market research is part of the business plan",
+          title: "Because market research is part of the business plan",
+          text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+          time: "2 Days Ago",
+          user: "Roberto Rossi",
         },
         {
           img: "news-3.jpg",
-          text: "Working from home is now a trend",
+          title: "Working from home is now a trend",
+          text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+          time: "4 Days Ago",
+          user: "Arianna Esper",
         },
       ],
     };

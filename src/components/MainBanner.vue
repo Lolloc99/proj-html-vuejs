@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-container banner">
+  <main class="banner">
     <section class="container">
       <!-- Navbar -->
       <nav>
@@ -13,7 +13,7 @@
               <h3>{{ item.text }}</h3>
             </li>
           </ul>
-          <button class="btn-get-in">GET IN TOUCH</button>
+          <button class="btn-generic">Get in touch</button>
         </div>
       </nav>
       <!-- /Navbar -->
@@ -27,8 +27,8 @@
           advantage of the latest technologies to offer excellent services .
         </p>
         <div class="btns">
-          <button class="btn-get-in">GET IN TOUCH</button>
-          <button class="btn-read-more">READ MORE</button>
+          <button class="btn-generic">Get in touch</button>
+          <button class="btn-generic-empty">Read more</button>
         </div>
       </div>
       <!-- /Banner content -->
@@ -50,6 +50,8 @@ export default {
 
 .banner {
   position: relative;
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 92vh;
   background-image: url(../assets/lead-customer/hero-image.png);
@@ -100,34 +102,17 @@ nav {
   }
 }
 
-.btn-get-in,
-.btn-read-more {
+.btn-generic {
   display: inline-block;
-  border: 1px solid transparent;
-  padding: 0.8rem 1.6rem;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 5px;
-  color: white;
-  background-color: $text-light;
   margin-left: 0.3rem;
-  cursor: pointer;
-
-  &:active {
-    color: $text-light;
-    background-color: white;
-    border: 1px solid $text-light;
-  }
+  font-weight: bold;
 }
 
-.btn-read-more {
-  border: 1px solid $text-light;
-  background-color: transparent;
+.btn-generic-empty {
+  display: inline-block;
+  margin-left: 0.3rem;
   margin: 0 0.3rem 0 1.5rem;
-
-  &:active {
-    border: 1px solid white;
-  }
+  font-weight: bold;
 }
 
 .nexgen::before {

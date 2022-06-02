@@ -26,7 +26,7 @@
             <input type="text" placeholder="Message" class="big-input" />
           </li>
         </ul>
-        <button class="btn">Send</button>
+        <button class="btn-generic">Send</button>
       </div>
       <div class="col-dx">
         <h2>Example Inc.</h2>
@@ -50,7 +50,7 @@
             <p>Main Evenue, 987</p>
           </li>
         </ul>
-        <button class="btn-2">View Map</button>
+        <button class="btn-generic-empty">View Map</button>
       </div>
     </div>
   </section>
@@ -67,10 +67,7 @@ export default {
 @import "~@fortawesome/fontawesome-free/css/all.min.css"; //Font Awesome
 
 .section {
-  display: flex;
-  justify-content: center;
   padding: 7.5rem 0;
-  width: 100%;
   background-color: white;
 }
 
@@ -90,6 +87,7 @@ export default {
       content: "Touch";
       color: $text-light;
       padding: 0 1rem;
+      margin-left: 0.5rem;
       background-color: $bg-light-blue;
       border-radius: 5px;
     }
@@ -159,7 +157,7 @@ export default {
       margin-right: 1rem;
       color: $text-light;
       background-color: $bg-light-blue;
-      padding: .7rem;
+      padding: 0.7rem;
       border-radius: 50%;
     }
 
@@ -170,20 +168,12 @@ export default {
     }
 
     &:last-child i {
-    padding: .7rem .9rem;
+      padding: 0.7rem 0.9rem;
     }
   }
 }
 
-.btn,
-.btn-2 {
-  font-size: 1.1rem;
-  padding: 0.7rem 1.5rem;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  text-transform: uppercase;
-  color: white;
-  background-color: $text-light;
+.btn-generic {
   margin-bottom: 2rem;
 
   &:active {
@@ -191,9 +181,7 @@ export default {
   }
 }
 
-.btn-2 {
-  background-color: transparent;
-  border: 1px solid $text-light;
+.btn-generic-empty {
   color: $text-light;
   margin-top: 1rem;
 

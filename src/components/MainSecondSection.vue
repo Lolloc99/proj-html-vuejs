@@ -33,9 +33,6 @@ export default {
 @import "~@fortawesome/fontawesome-free/css/all.min.css"; //Font Awesome
 
 .section {
-  display: flex;
-  justify-content: center;
-  width: 100%;
   height: 85vh;
   background-color: white;
 }
@@ -67,6 +64,7 @@ h1 {
     content: "The";
     color: $text-light;
     padding: 0 1rem;
+    margin-right: 0.5rem;
     background-color: $bg-light-blue;
     border-radius: 5px;
   }
@@ -75,7 +73,7 @@ h1 {
 p {
   color: rgba(33, 62, 55, 0.7);
   font-size: 1.15rem;
-  font-family: $big
+  font-family: $big;
 }
 
 ul {

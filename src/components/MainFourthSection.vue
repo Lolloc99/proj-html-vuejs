@@ -3,7 +3,7 @@
     <div class="container">
       <div class="intro">
         <small>Monthly plans</small>
-        <h1> Table</h1>
+        <h1>Table</h1>
         <p class="submain">
           We can help you deliver and execute your future, whetever you compete,
           using the latest <br />
@@ -68,11 +68,8 @@ export default {
 @import "~@fortawesome/fontawesome-free/css/all.min.css"; //Font Awesome
 
 .section {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: $bg-light-green;
   padding: 8rem 0 10rem 0;
+  background-color: $bg-light-green;
 }
 
 .intro {
@@ -88,6 +85,7 @@ export default {
       content: "Pricing";
       color: $text-light;
       padding: 0 1rem;
+      margin-right: 0.5rem;
       background-color: $bg-dark-green;
       border-radius: 5px;
     }

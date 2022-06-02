@@ -24,10 +24,7 @@ export default {
 @import "~@fortawesome/fontawesome-free/css/all.min.css"; //Font Awesome
 
 .section {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
   padding: 8rem 0;
   background-color: $bg-light-green;
 }
@@ -45,7 +42,7 @@ export default {
   padding: 3rem;
   background-color: white;
   margin: 1rem 0;
-  transition: .5s;
+  transition: 0.5s;
 
   &:hover {
     transform: translate(0px, -12px);

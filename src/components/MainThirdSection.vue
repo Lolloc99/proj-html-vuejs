@@ -2,7 +2,7 @@
   <section class="section">
     <div class="container">
       <small>Our business areas</small>
-      <h1>Excellence in </h1>
+      <h1>Excellence in</h1>
       <div class="space-bet">
         <p>
           We are leaders in providing consultancy services with a set of
@@ -10,14 +10,14 @@
           experienced and renowed professionals. These are some options that you
           can hire.
         </p>
-        <button class="third-section-btn">See all</button>
+        <button class="btn-generic-empty see-all">See all</button>
       </div>
       <ul>
         <li v-for="(item, index) in cards" :key="index">
           <i :class="item.icon"></i>
           <h2>{{ item.title }}</h2>
           <p>{{ item.subtitle }}</p>
-          <button class="third-section-btn">Read more</button>
+          <button class="btn-generic-empty">Read more</button>
         </li>
       </ul>
     </div>
@@ -38,10 +38,7 @@ export default {
 @import "~@fortawesome/fontawesome-free/css/all.min.css"; //Font Awesome
 
 .section {
-  display: flex;
-  justify-content: center;
   padding: 8rem 0;
-  width: 100%;
   background-color: $bg-dark-blue;
 }
 
@@ -52,24 +49,24 @@ h1 {
   &::after {
     content: "Services";
     color: white;
+    margin-left: 0.5rem;
     padding: 0 1rem;
     background-color: $services-evidencer;
     border-radius: 5px;
   }
 }
 
-.third-section-btn {
+.btn-generic-empty {
   font-size: 1.1rem;
   padding: 0.7rem 1.5rem;
-  border: 1px solid $text-light;
-  border-radius: 5px;
-  text-transform: uppercase;
-  color: white;
-  background-color: transparent;
 
   &:active {
-    border: 1px solid white;
+    color: white;
   }
+}
+
+.see-all:active {
+  color: $text-light;
 }
 
 .space-bet {
@@ -111,7 +108,7 @@ ul {
     padding: 3rem;
     border-radius: 10px;
     background-color: $card-dark;
-    transition: .5s;
+    transition: 0.5s;
 
     &:hover {
       transform: translate(0px, -12px);

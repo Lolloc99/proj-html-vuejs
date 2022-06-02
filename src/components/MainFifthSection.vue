@@ -2,20 +2,33 @@
   <section class="section">
     <div class="container">
       <small>Our Editorial Content</small>
-      <h1>Latest </h1>
+      <h1>Latest</h1>
       <div class="space-bet">
         <p class="submain">
           Every week we publish content about what is best in the business world
         </p>
-        <button class="btn">See all</button>
+        <button class="btn-generic">See all</button>
       </div>
       <ul>
         <li v-for="(item, index) in cards" :key="index">
+          <div class="info1">
+            <div class="abs first">
+              <i class="far fa-user"></i>
+              <span>{{ item.user }}</span>
+            </div>
+            <div class="abs second">
+              <i class="far fa-clock"></i>
+              <span>{{ item.time }}</span>
+            </div>
+            <div class="abs third">
+              <span>{{ item.text }}</span>
+            </div>
+          </div>
           <img
             :src="require(`../assets/images/${item.img}`)"
-            :alt="item.text"
+            :alt="item.title"
           />
-          <span>{{ item.text }}</span>
+          <span class="main-span">{{ item.title }}</span>
         </li>
       </ul>
     </div>
@@ -35,9 +48,6 @@ export default {
 @import "../style/variables.scss";
 
 .section {
-  display: flex;
-  justify-content: center;
-  width: 100%;
   padding: 7rem 0;
   background-color: white;
 }
@@ -49,24 +59,14 @@ h1 {
     content: "News";
     color: $text-light;
     padding: 0 1rem;
+    margin-left: 0.5rem;
     background-color: $bg-light-blue;
     border-radius: 5px;
   }
 }
 
-.btn {
-  font-size: 1.1rem;
-  padding: 0.7rem 1.5rem;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  text-transform: uppercase;
-  color: white;
-  background-color: $text-light;
-  margin-bottom: 2rem;
-
-  &:active {
-    border: 1px solid $text-dark;
-  }
+.btn-generic:active {
+  border: 1px solid $text-dark;
 }
 
 .space-bet {
@@ -103,7 +103,7 @@ li {
     border-radius: 10px;
   }
 
-  span {
+  .main-span {
     position: absolute;
     width: 80%;
     bottom: 3rem;
@@ -115,6 +115,46 @@ li {
     text-align: center;
     z-index: 1;
     line-height: 1.7rem;
+    transition: 0.2s;
+  }
+
+  &:hover .info1 {
+    display: inline;
+  }
+
+  &:hover .main-span {
+    bottom: 8rem;
+  }
+
+  .info1 {
+    display: none;
+
+    .abs {
+      position: absolute;
+      color: white;
+      z-index: 1;
+      font-size: 1rem;
+    }
+
+    i {
+      margin-right: 0.5rem;
+    }
+
+    .first {
+      top: 35px;
+      left: 60px;
+    }
+
+    .second {
+      top: 35px;
+      right: 60px;
+    }
+
+    .third {
+      bottom: 55px;
+      left: 60px;
+      font-size: 1.2rem;
+    }
   }
 }
 </style>
